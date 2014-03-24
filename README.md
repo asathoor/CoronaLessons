@@ -1,7 +1,7 @@
 Corona Lessons
 ==============
 
-## Interaction 3rd Semester Spring 2014 (the Danish Class)
+## Interaction 3rd Semester Spring 2014 
 
 During the present semester we are working with serious games.
 The Corona SDK is designed for mobile development.
@@ -14,6 +14,9 @@ In general the files may be used like this:
 * Unzip
 * Open Corona SDK
 * In Corona / File / .. open the main.lua file.
+
+These files are made for the Danish class.
+Hence the comments are in Danish.
 
 |Sources|URL|
 |------|---|
