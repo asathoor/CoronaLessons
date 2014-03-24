@@ -16,6 +16,7 @@ In general the files may be used like this:
 * In Corona / File / .. open the main.lua file.
 
 |Sources|URL|
+|------|---|
 |Lua|http://lua.gts-stolberg.de/en/?uml=1|
 |Corona samples|http://coronalabs.com/resources/tutorials/sample-code/|
 |Corona SDK|http://coronalabs.com|
