@@ -4,6 +4,7 @@
 -- baggrund
 -- background = display.newImage( "images/monkey.png" )
 
+-- skalering af baggrund (den magiske formular)
 application =
 {
 	content =
@@ -16,10 +17,14 @@ application =
 	},
 }
 
+-- baggrund hentes frem
 background = display.newImage( "images/monkey.png", true )
+
+-- baggrund centreres
 background.x = display.contentWidth / 2
 background.y = display.contentHeight / 2
 
+-- teksten editeres (teksten kommer EFTER baggrunden, fordi Lua afvikles i rækkefølgen fra top mod bund i koden)
 myText = display.newText( "Hvilke dyr?", 333, 250, native.systemFont, 65 )
 
 -- eksperimenter
