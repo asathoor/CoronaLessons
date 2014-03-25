@@ -23,3 +23,4 @@ Hence the comments are in Danish.
 |Lua|http://lua.gts-stolberg.de/en/?uml=1|
 |Corona samples|http://coronalabs.com/resources/tutorials/sample-code/|
 |Corona SDK|http://coronalabs.com|
+|Programming in Lua|http://www.lua.org/pil/contents.html|
