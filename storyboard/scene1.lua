@@ -19,6 +19,15 @@ storyboard.removeAll()
 -- 
 ---------------------------------------------------------------------------------
 
+-- monsters table
+local monsters = {
+	"Oscar the Vampire",
+	"Angst the evil Bat",
+	"Juliet the Virgin",
+	"Fungus the old butler",
+	"Camelia the Smiling Zombie"
+}
+
 ---------------------------------------------------------------------------------
 -- BEGINNING OF YOUR IMPLEMENTATION
 ---------------------------------------------------------------------------------
@@ -51,6 +60,19 @@ local group = self.view
   startButton:addEventListener( "tap", onTap )
  
   group:insert( startButton )
+
+  -- monster præsentation
+  cast = display.newText(
+	"Feat ".. monsters[1] .. " & " .. table.getn(monsters) .. " monsters", 
+	0, 
+	0, 
+	native.systemFontBold, 
+	25
+  )
+  cast.x = display.contentCenterX
+  cast.y = display.contentCenterY +  10
+  cast:setFillColor( 1,0,0 )  
+group:insert( cast )
 	
 end
 
