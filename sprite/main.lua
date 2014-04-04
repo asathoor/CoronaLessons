@@ -8,20 +8,14 @@
 -- Game bits and pieces
 -- by Per Thykjaer Jensen
 
------------------------------------------------------------------------------------------
--- IMAGES, GEOMETRY ETC.
------------------------------------------------------------------------------------------
-
 local x = display.contentWidth
 local y = display.contentHeight
 
 -----------------------------------------------------------------------------------------
 -- ANIMATION VIA SPRITE SHEET AND TRANSITIONS
- -----------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------
  
 -- set the size of the frames and of the total sheet
-
--- size of tiles and tilesheet
 local sheetData = { width=140, height=140, numFrames=4, sheetContentWidth=280, sheetContentHeight=280 }
 
 -- define name of imageSheet
@@ -69,7 +63,7 @@ animation2:play()
 
 
 -----------------------------------------------------------------------------------------
--- BUTTONS
+-- BUTTON
 -----------------------------------------------------------------------------------------
 
 -- button ... first initiate widget
@@ -77,9 +71,6 @@ local widget = require( "widget" )
 
 -- function to be used by the button
 local function knapSluppet()
-	-- display.newText( "Yep, the button works all right.", 600, 300, native.systemFont, 45 )
-
-	-- button initiates a new animation instance
 	
 	-- size of tiles and tilesheet
 	local sheetData = { width=140, height=140, numFrames=4, sheetContentWidth=280, sheetContentHeight=280 }
@@ -103,16 +94,15 @@ local function knapSluppet()
 
 	-- run animation
 	animation:play()
+	animation2:pause()
 	
-	--ends animation
-
 end
 
 -- Create the widget
 local button1 = widget.newButton
 {
     left = 600,
-    top = 500,
+    top = 400,
     id = "button1",
     label = "<<- CLICK HERE PLEASE ->>",
     onRelease = knapSluppet
